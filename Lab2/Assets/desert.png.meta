@@ -4896,7 +4896,6 @@ TextureImporter:
     nameFileIdTable:
       desert_152: 1581332721
       desert_105: 1439360562
-      desert_13: 1442552371
       desert_24: -1013806449
       desert_124: 1752061842
       desert_218: -934726439
@@ -4906,6 +4905,7 @@ TextureImporter:
       desert_185: 210170232
       desert_0: -534232631
       desert_159: -1579021237
+      desert_116: 1403230566
       desert_212: -1201651783
       desert_187: -885077302
       desert_113: 1740053506
@@ -5022,15 +5022,15 @@ TextureImporter:
       desert_54: 1338609149
       desert_18: 810427213
       desert_109: 1714818601
-      desert_178: -1857216065
-      desert_195: 1449511102
       desert_192: -1361189889
+      desert_178: -1857216065
       desert_197: -1787258977
       desert_123: 2027137851
       desert_17: 384603816
       desert_223: 1764317806
       desert_71: -129539446
       desert_23: 373083942
+      desert_195: 1449511102
       desert_193: -63101294
       desert_83: -1454994884
       desert_75: -1340335457
@@ -5119,8 +5119,8 @@ TextureImporter:
       desert_57: -2108086475
       desert_56: 1317089334
       desert_149: 2135279193
-      desert_116: 1403230566
       desert_103: -234319439
+      desert_13: 1442552371
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
