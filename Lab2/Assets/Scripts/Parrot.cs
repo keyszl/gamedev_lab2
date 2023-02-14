@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+public class Parrot : MonoBehaviour
 {
+    private AudioSource audio;
 
     private Rigidbody2D body;
     public float horizontal;
@@ -17,6 +18,8 @@ public class Character : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        audio = GetComponent<AudioSource>();
+        audio.Play();
     }
 
     // Update is called once per frame
