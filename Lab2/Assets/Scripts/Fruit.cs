@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Fruit : MonoBehaviour
 {
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -16,5 +18,5 @@ public class Fruit : MonoBehaviour
         
     }
 
-   
+
 }

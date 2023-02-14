@@ -14,12 +14,17 @@ public class Parrot : MonoBehaviour
 
     public float runSpeed = 5f;
 
+     public ParticleSystem part;
+
     // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         audio1 = GetComponent<AudioSource>();
         audio1.Play();
+        part = GetComponent<ParticleSystem>();
+        part.Stop();
+
     }
 
     // Update is called once per frame
@@ -41,6 +46,7 @@ public class Parrot : MonoBehaviour
      void OnTriggerEnter2D(Collider2D col) {
         print("Collision");
         if (col.gameObject.tag == "Fruit") {
+            part.Play();  
             Destroy(col.gameObject);
         }
 
