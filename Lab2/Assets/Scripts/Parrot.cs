@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Parrot : MonoBehaviour
 {
-    private AudioSource audio;
+    private AudioSource audio1;
 
     private Rigidbody2D body;
     public float horizontal;
@@ -18,8 +18,8 @@ public class Parrot : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        audio = GetComponent<AudioSource>();
-        audio.Play();
+        audio1 = GetComponent<AudioSource>();
+        audio1.Play();
     }
 
     // Update is called once per frame
@@ -37,4 +37,5 @@ public class Parrot : MonoBehaviour
 
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
+
 }
