@@ -38,4 +38,11 @@ public class Parrot : MonoBehaviour
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 
+     void OnTriggerEnter2D(Collider2D col) {
+        print("Collision");
+        if (col.gameObject.tag == "Fruit") {
+            Destroy(col.gameObject);
+        }
+
+}
 }
