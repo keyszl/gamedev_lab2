@@ -19,9 +19,9 @@ public class Pirate : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter2D(Collider2D col) {
+    public void OnTriggerEnter2D(Collider2D collider2D) {
         print("Collision");
-        if (col.gameObject.tag == "Player") {
+        if (collider2D.gameObject.CompareTag("Player")) {
             audio1.Play();
             GameManager.Instance.DialogShow(text);
         }

@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance {get; private set;}
 
     public GameObject dialogBox;
     public TextMeshProUGUI dialogText;
+
+    public GameObject canvas;
+    public GameObject eventSystem;
+
+    public GameObject mainScreen;
     
     
     public void DialogShow(string text) {
@@ -22,9 +27,19 @@ public class GameManager : MonoBehaviour
 
     IEnumerator TypeText(string text) {
         dialogText.text = "";
+        print("empty text:" + text);
         foreach (char c in text.ToCharArray()) {
             dialogText.text += c;
             yield return new WaitForSeconds(0.02f);
+        }
+    }
+
+    void Awake() {
+        if (Instance == null) {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Destroy(gameObject);
         }
     }
     
